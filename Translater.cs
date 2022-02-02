@@ -1,3 +1,6 @@
+using System.Collections;
+using UnityEngine;
+
 public static class Translater {
     public static IEnumerator TranslatePosAndRot(Transform transform, Vector3 toPos, Quaternion toRot, float duration, bool speedBase = false, bool local = false, AnimationCurve curve = null) {
         Vector3 fromPos = !local ? transform.position : transform.localPosition;
